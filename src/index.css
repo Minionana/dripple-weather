@@ -1,0 +1,49 @@
+:root {
+  --font-default: 1em Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --background-image-day: linear-gradient(
+    45deg,
+    hsl(183deg 100% 52%) 0%,
+    hsl(188deg 100% 58%) 11%,
+    hsl(194deg 100% 64%) 24%,
+    hsl(200deg 100% 71%) 39%,
+    hsl(205deg 100% 77%) 53%,
+    hsl(207deg 100% 79%) 67%,
+    hsl(209deg 100% 81%) 80%,
+    hsl(211deg 100% 82%) 91%,
+    hsl(213deg 100% 84%) 100%
+  );
+  --background-image-night: linear-gradient(
+    45deg,
+    hsl(223deg 37% 26%) 0%,
+    hsl(234deg 39% 26%) 13%,
+    hsl(245deg 41% 25%) 25%,
+    hsl(254deg 43% 25%) 37%,
+    hsl(265deg 45% 24%) 50%,
+    hsl(272deg 42% 25%) 63%,
+    hsl(279deg 37% 27%) 75%,
+    hsl(285deg 33% 28%) 87%,
+    hsl(292deg 30% 30%) 100%
+  );
+
+  font: var(--font-default);
+  margin: 0;
+  padding: 0;
+}
+
+body, head {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  color: white;
+  user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4em;
+}
