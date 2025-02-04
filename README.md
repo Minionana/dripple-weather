@@ -6,4 +6,4 @@ This website was made in a span of 3 days by ADT to learn react.
 ![Dripple](https://github.com/user-attachments/assets/710cc69f-484d-4d17-9684-c736dfbc038e)
 
 ## Attribution
-Icons are powered by [tomorrow.io](https://tomorrow.io/weather-api)
+Weather icons are powered by [tomorrow.io](https://tomorrow.io/weather-api) under the [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)
