@@ -1,8 +1,7 @@
 {
     "name": "Dripple",
     "short_name": "Dripple",
-    "start_url": "./",
-    "scope": ".",
+    "start_url": "/",
     "icons": [
       {
         "src": "/Dripple.png",
