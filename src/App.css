@@ -64,6 +64,7 @@ body {
   justify-content: center;
   max-width: 80vw;
   min-width: 425px;
+  width: 80vw;
 }
 
 .searchBar {
@@ -275,10 +276,58 @@ h4 {
   position: absolute;
   right: 12px;
   bottom: 12px;
-  font-size: x-small;
+  font-size: 0.8em;
   color: white;
 }
 
 .attribution > a {
   color: gold;
+}
+
+@media only screen and (max-width: 530px) {
+  :root {
+    --font-default: 0.65em Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+
+  .base {
+    min-width: 240px;
+  }
+
+  .weatherIcon {
+    height: 110px;
+    width: 110px;
+  }
+
+  .searchBar {
+    font-size: 1em;
+  }
+  
+  .tab {
+    font-size: 1.2em;
+  }
+
+  .expandable {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  @keyframes expandAnim {
+    to {
+      height: 210px;
+      padding: 20px 0 0;
+    }
+  }
+
+  .expanded {
+    height: 210px;
+    padding: 20px 0 0;
+  }
+
+  .expandText {
+    margin-top: 16px;
+  }
+
+  .weatherSection {
+    padding: 16px;
+  }
 }

@@ -72,6 +72,12 @@ function App() {
 
   useEffect(() => {searchQueryRef.current = searchQuery}, [searchQuery])
 
+  // useEffect(() => {
+  //   let scaleFactor = window.innerWidth * 0.8 / 425
+  //   document.getElementsByClassName("base")[0].style.transform = `scale(${scaleFactor})`
+  //   console.log(document.getElementsByClassName("base")[0].style.transform)
+  // })
+
   return (
     <div className="base">
       <div className="panel" style={{display: isSearching ? "block" : "none"}} onClick={() => endSearch(setIsSearching)}></div>
@@ -126,7 +132,7 @@ function App() {
           }}>See more</p>
         </div>
       </div>
-      <p className="attribution">Icons from <a href="https://tomorrow.io">Tomorrow.io</a></p>
+      <p className="attribution">Weather icons powered by <a href="https://tomorrow.io/weather-api">Tomorrow.io</a></p>
     </div>
   )
 }
