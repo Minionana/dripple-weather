@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import './App.css'
 import weatherCodes from './assets/weather-codes.json'
+import { Analytics } from '@vercel/analytics/react'
 
 async function updateWeatherConditions(location, setWeatherConditions) {
   try {
@@ -133,6 +134,7 @@ function App() {
         </div>
       </div>
       <p className="attribution">Weather icons powered by <a href="https://tomorrow.io/weather-api">Tomorrow.io</a></p>
+      <Analytics />
     </div>
   )
 }
